@@ -70,9 +70,9 @@
                 $v = abs($v);
         }
         $a = [21, 3, 0, 5, -32];
-        echo "До вызова функции: [" . implode(', ', $a) . "]<br>";
+        echo "До вызова функции: [", implode(', ', $a), "]<br>";
         abs_array($a);
-        echo "После вызова функции: [" . implode(', ', $a) . "]<br>";
+        echo "После вызова функции: [", implode(', ', $a), "]<br>";
         ?>
         <h1>Задание 6</h1>
         <?php
@@ -84,14 +84,14 @@
             $arr = $new;
         }
         $a = [21, 3, 0, 5, -32];
-        echo "До вызова функции: [" . implode(', ', $a) . "]<br>";
+        echo "До вызова функции: [", implode(', ', $a), "]<br>";
         rekey_by_value($a);
         echo "После вызова функции: ";
         $output = [];
         foreach ($a as $key => $value) {
             $output[] = "'$key' => $value";
         }
-        echo "[" . implode(', ', $output) . "]<br>";
+        echo "[", implode(', ', $output), "]<br>";
         ?>
     </body>
 </html>
