@@ -59,7 +59,6 @@
             public function sayAboutMe() {
                 echo "<b>Пользователь:</b> {$this->firstName} {$this->lastName}", '<br>';
             }
-
             private function isNameCorrect($name) {
                 return mb_strlen($name) <= 128;
             }
