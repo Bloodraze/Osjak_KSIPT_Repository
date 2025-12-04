@@ -1,0 +1,30 @@
+[
+  {
+        "type": "Bird",
+        "weight": 10,
+        "height": 100,
+        "name": "Воробей",
+        "speed": 50
+    },
+  {
+        "type": "Animal",
+        "weight": 3,
+        "height": 10,
+        "name": "Муравей",
+        "speed": 0
+    },
+  {
+        "type": "Milkeater",
+        "weight": 50,
+        "height": 40, 
+        "name": "Мартышка", 
+        "speed": 0
+    },
+  {
+        "type": "NotFlyBird",
+        "weight": 50, 
+        "height": 40, 
+        "name": "Пингвин", 
+        "speed": 100
+    }
+]
