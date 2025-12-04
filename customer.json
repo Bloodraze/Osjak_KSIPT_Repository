@@ -1,0 +1,30 @@
+[
+    {"name":"Иван",
+    "login":"vanya",
+    "password":"ivan",
+    "email":"vanya@mail.ru",
+    "amount":"300"},
+
+    {"name":"Ольга",
+    "login":"olga",
+    "password":"olga",
+    "email":"olga@mail.ru",
+    "amount":"150"},
+    {"name":"Алексей",
+    "login":"alex",
+    "password":"alex",
+    "email":"alex@mail.ru",
+    "amount":"500"},
+    
+    {"name":"Мария",
+    "login":"masha",
+    "password":"masha",
+    "email":"masha@mail.ru",
+    "amount":"1000"},
+
+    {"name":"Дмитрий",
+    "login":"dima",
+    "password":"dima",
+    "email":"dima@mail.ru",
+    "amount":"200"}
+]
