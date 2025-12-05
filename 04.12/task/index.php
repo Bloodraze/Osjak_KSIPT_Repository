@@ -22,8 +22,20 @@ $animals = [];
 foreach ($animalsData as $animalData) {
     $animals[] = createAnimal($animalData);
 }
+$keeper1 = new ZooKeeper("Иван");
+$keeper2 = new ZooKeeper("Мария");
+$keeper3 = new ZooKeeper("Петр");
+$keeper1->addAnimal($animals[0] ?? new Animal());
+$keeper2->addAnimal($animals[1] ?? new Animal());
+$keeper3->addAnimal($animals[2] ?? new Animal());
 foreach ($animals as $animal) {
     $animal->sayHello();
     echo '<br>';
 }
+echo "<h3>Информация о смотрителях:</h3>";
+$keeper1->printMyAnimals();
+echo '<br>';
+$keeper2->printMyAnimals();
+echo '<br>';
+$keeper3->printMyAnimals();
 ?>
