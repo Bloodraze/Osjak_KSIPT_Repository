@@ -7,6 +7,11 @@ spl_autoload_register(function ($class_name) {
 });
 $json = file_get_contents('animals.json');
 $animalsData = json_decode($json, true);
+$keeperConfigs = [
+    ["name" => "Иван", "types" => ['Bird']],
+    ["name" => "Мария", "types" => ['Milkeater']],
+    ["name" => "Петр", "types" => ['NotFlyBird']]
+];
 function createAnimal($data) {
     $type = $data['type'];
     $weight = $data['weight'] ?? 0;
@@ -22,20 +27,32 @@ $animals = [];
 foreach ($animalsData as $animalData) {
     $animals[] = createAnimal($animalData);
 }
-$keeper1 = new ZooKeeper("Иван");
-$keeper2 = new ZooKeeper("Мария");
-$keeper3 = new ZooKeeper("Петр");
-$keeper1->addAnimal($animals[0] ?? new Animal());
-$keeper2->addAnimal($animals[1] ?? new Animal());
-$keeper3->addAnimal($animals[2] ?? new Animal());
+$keepers = [];
+foreach ($keeperConfigs as $config) {
+    $keepers[$config['name']] = [
+        'keeper' => new ZooKeeper($config['name']),
+        'types' => $config['types']
+    ];
+}
+foreach ($animals as $animal) {
+    foreach ($keepers as $keeperName => $keeperData) {
+        foreach ($keeperData['types'] as $allowedType) {
+            if ($animal instanceof $allowedType) {
+                $keepers[$keeperName]['keeper']->addAnimal($animal);
+                break 2;
+            }
+        }
+    }
+}
+echo "<h2>Все животные:</h2>";
 foreach ($animals as $animal) {
     $animal->sayHello();
     echo '<br>';
 }
 echo "<h3>Информация о смотрителях:</h3>";
-$keeper1->printMyAnimals();
-echo '<br>';
-$keeper2->printMyAnimals();
-echo '<br>';
-$keeper3->printMyAnimals();
+foreach ($keepers as $keeperName => $keeperData) {
+    echo "<strong>{$keeperName}:</strong><br>";
+    $keeperData['keeper']->printMyAnimals();
+    echo '<br><br>';
+}
 ?>
