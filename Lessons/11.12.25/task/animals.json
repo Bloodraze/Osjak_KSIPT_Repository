@@ -1,0 +1,51 @@
+[
+  {
+    "type": "Bird",
+    "weight": 10,
+    "height": 100,
+    "name": "Воробей",
+    "speed": 50
+  },
+  {
+    "type": "Animal",
+    "weight": 3,
+    "height": 10,
+    "name": "Муравей",
+    "speed": 0
+  },
+  {
+    "type": "Milkeater",
+    "weight": 50,
+    "height": 40, 
+    "name": "Мартышка", 
+    "speed": 0
+  },
+  {
+    "type": "NotFlyBird",
+    "weight": 50, 
+    "height": 40, 
+    "name": "Пингвин", 
+    "speed": 100
+  },
+  {
+    "type": "Bird",
+    "weight": 2000,
+    "height": 250,
+    "name": "Орел",
+    "speed": 120
+  },
+  {
+    "type": "Milkeater",
+    "weight": 300,
+    "height": 150,
+    "name": "Корова",
+    "speed": 20
+  },
+  {
+    "type": "NotFlyBird",
+    "weight": 4,
+    "height": 30,
+    "name": "Страус",
+    "speed": 70
+  }
+]

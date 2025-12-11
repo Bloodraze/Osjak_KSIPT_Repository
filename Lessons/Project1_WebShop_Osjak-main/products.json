@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Фильтр настольный Аквафор Кристалл",
+    "category": "Проточные фильтры",
+    "price": 2890,
+    "brand": "Аквафор",
+    "imageUrl": "img/aquaphor-crystal.jpg",
+    "stock": true,
+    "offer": "Бесплатная установка"
+  },
+  {
+    "name": "Фильтр под мойку Барьер Эксперт Стандарт",
+    "category": "Проточные фильтры",
+    "price": 3490,
+    "brand": "Барьер",
+    "imageUrl": "img/barrier-expert.jpg",
+    "stock": true,
+    "offer": "Подарок: 3 картриджа"
+  },
+  {
+    "name": "Система обратного осмоса Гейзер Престиж",
+    "category": "Системы обратного осмоса",
+    "price": 8990,
+    "brand": "Гейзер",
+    "imageUrl": "img/geizer-prestige.jpg",
+    "stock": false,
+    "offer": ""
+  },
+  {
+    "name": "Фильтр-кувшин Аквафор Прованс",
+    "category": "Фильтры-кувшины",
+    "price": 790,
+    "brand": "Аквафор",
+    "imageUrl": "img/aquaphor-provance.jpg",
+    "stock": true,
+    "offer": "Скидка 15%"
+  },
+  {
+    "name": "Система обратного осмоса Атолл A-550",
+    "category": "Системы обратного осмоса",
+    "price": 12500,
+    "brand": "Atoll",
+    "imageUrl": "img/atoll-a550.jpg",
+    "stock": true,
+    "offer": "Рассрочка 0%"
+  },
+  {
+    "name": "Фильтр-кувшин Барьер Гранд",
+    "category": "Фильтры-кувшины",
+    "price": 650,
+    "brand": "Барьер",
+    "imageUrl": "img/barrier-grand.jpg",
+    "stock": true,
+    "offer": ""
+  },
+  {
+    "name": "Насадка на кран Барьер Компакт",
+    "category": "Насадки на кран",
+    "price": 890,
+    "brand": "Барьер",
+    "imageUrl": "img/barrier-compact.jpg",
+    "stock": true,
+    "offer": "Хит продаж"
+  },
+  {
+    "name": "Система обратного осмоса Новая Вода Praktic",
+    "category": "Системы обратного осмоса",
+    "price": 7590,
+    "brand": "Новая Вода",
+    "imageUrl": "img/new-water-praktic.jpg",
+    "stock": true,
+    "offer": "Установка в подарок"
+  },
+  {
+    "name": "Фильтр-кувшин Гейзер Грифон",
+    "category": "Фильтры-кувшины",
+    "price": 550,
+    "brand": "Гейзер",
+    "imageUrl": "img/geizer-grifon.jpg",
+    "stock": false,
+    "offer": ""
+  },
+  {
+    "name": "Насадка на кран Аквафор Топаз",
+    "category": "Насадки на кран",
+    "price": 1200,
+    "brand": "Аквафор",
+    "imageUrl": "img/aquaphor-topaz.jpg",
+    "stock": true,
+    "offer": "Акция: 2 по цене 1"
+  }
+]
