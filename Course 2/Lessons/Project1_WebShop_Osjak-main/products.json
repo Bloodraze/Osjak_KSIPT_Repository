@@ -24,7 +24,7 @@
     "brand": "Гейзер",
     "imageUrl": "img/geizer-prestige.jpg",
     "stock": false,
-    "offer": ""
+    "offer": "Рассрочка 5%"
   },
   {
     "name": "Фильтр-кувшин Аквафор Прованс",
@@ -51,7 +51,7 @@
     "brand": "Барьер",
     "imageUrl": "img/barrier-grand.jpg",
     "stock": true,
-    "offer": ""
+    "offer": "Скидка 10%"
   },
   {
     "name": "Насадка на кран Барьер Компакт",
@@ -78,7 +78,7 @@
     "brand": "Гейзер",
     "imageUrl": "img/geizer-grifon.jpg",
     "stock": false,
-    "offer": ""
+    "offer": "Скидка 20%"
   },
   {
     "name": "Насадка на кран Аквафор Топаз",
