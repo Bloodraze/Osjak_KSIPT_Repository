@@ -39,10 +39,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_product'])) {
     if ($description === '') $errors[] = "Не заполнено поле 'Описание'";
     if ($category === '')    $errors[] = "Не выбрана категория";
     // Проверка числа для price и stock
-    if ($price === '' || !is_numeric($price)) {
+    if ($price === '' or !is_numeric($price)) {
         $errors[] = "Поле 'Цена' должно быть числом";
     }
-    if ($stock === '' || !ctype_digit($stock)) {
+    if ($stock === '' or !ctype_digit($stock)) {
         $errors[] = "Поле 'Остаток' должно быть целым числом";
     }
     if (empty($errors)) {
