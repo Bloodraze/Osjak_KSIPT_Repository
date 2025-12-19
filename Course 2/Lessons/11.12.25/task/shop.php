@@ -21,7 +21,7 @@ if (file_exists($usersFile)) {  // Проверяем, существует ли
     } else {
         // Проверяем и создаем массив favourites для каждого пользователя, если его нет
         foreach ($users as &$u) { // &u - ссылка, чтобы изменять элементы массива напрямую
-            if (!isset($u['favourites']) || !is_array($u['favourites'])) {
+            if (!isset($u['favourites']) or !is_array($u['favourites'])) {
                 $u['favourites'] = []; // Создаем пустой массив избранного, если отсутствует
             }
         }
