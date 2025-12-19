@@ -4,20 +4,23 @@
         "login": "admin",
         "password": "123",
         "email": "admin@example.com",
-        "role": "admin"
+        "role": "admin",
+        "favourites": []
     },
     {
         "name": "Вася",
         "login": "vasya212",
         "password": "212",
         "email": "vasya@example.com",
-        "role": "user"
+        "role": "user",
+        "favourites": []
     },
     {
         "name": "Маша",
         "login": "masha88",
         "password": "88",
         "email": "masha@example.com",
-        "role": "user"
+        "role": "user",
+        "favourites": []
     }
 ]

@@ -2,6 +2,7 @@
   {
     "name": "Фильтр настольный Аквафор Кристалл",
     "category": "Проточные фильтры",
+    "id": 1,
     "price": 2890,
     "brand": "Аквафор",
     "imageUrl": "img/aquaphor-crystal.jpg",
@@ -11,6 +12,7 @@
   {
     "name": "Фильтр под мойку Барьер Эксперт Стандарт",
     "category": "Проточные фильтры",
+    "id": 2,
     "price": 3490,
     "brand": "Барьер",
     "imageUrl": "img/barrier-expert.jpg",
@@ -20,6 +22,7 @@
   {
     "name": "Система обратного осмоса Гейзер Престиж",
     "category": "Системы обратного осмоса",
+    "id": 3,
     "price": 8990,
     "brand": "Гейзер",
     "imageUrl": "img/geizer-prestige.jpg",
@@ -29,6 +32,7 @@
   {
     "name": "Фильтр-кувшин Аквафор Прованс",
     "category": "Фильтры-кувшины",
+    "id": 4,
     "price": 790,
     "brand": "Аквафор",
     "imageUrl": "img/aquaphor-provance.jpg",
@@ -38,6 +42,7 @@
   {
     "name": "Система обратного осмоса Атолл A-550",
     "category": "Системы обратного осмоса",
+    "id": 5,
     "price": 12500,
     "brand": "Atoll",
     "imageUrl": "img/atoll-a550.jpg",
@@ -47,6 +52,7 @@
   {
     "name": "Фильтр-кувшин Барьер Гранд",
     "category": "Фильтры-кувшины",
+    "id": 6,
     "price": 650,
     "brand": "Барьер",
     "imageUrl": "img/barrier-grand.jpg",
@@ -56,6 +62,7 @@
   {
     "name": "Насадка на кран Барьер Компакт",
     "category": "Насадки на кран",
+    "id": 7,
     "price": 890,
     "brand": "Барьер",
     "imageUrl": "img/barrier-compact.jpg",
@@ -65,6 +72,7 @@
   {
     "name": "Система обратного осмоса Новая Вода Praktic",
     "category": "Системы обратного осмоса",
+    "id": 8,
     "price": 7590,
     "brand": "Новая Вода",
     "imageUrl": "img/new-water-praktic.jpg",
@@ -74,6 +82,7 @@
   {
     "name": "Фильтр-кувшин Гейзер Грифон",
     "category": "Фильтры-кувшины",
+    "id": 9,
     "price": 550,
     "brand": "Гейзер",
     "imageUrl": "img/geizer-grifon.jpg",
@@ -83,6 +92,7 @@
   {
     "name": "Насадка на кран Аквафор Топаз",
     "category": "Насадки на кран",
+    "id": 10,
     "price": 1200,
     "brand": "Аквафор",
     "imageUrl": "img/aquaphor-topaz.jpg",
