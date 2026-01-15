@@ -1,5 +1,6 @@
 console.log('Задание а')
-let n = 4;
+const readline = require('readline-sync');
+const n = Number(readline.question("Input n: "));
 let s = 0;
 let i = 1;
 while (i<=n){
@@ -9,7 +10,8 @@ while (i<=n){
 console.log(s);
 
 console.log('Задание б')
-let n1 = 9;
+const readline = require('readline-sync');
+const n1 = Number(readline.question("Input n: "));
 let s1 = 0;
 let i1 = 1;
 while (i<=n){
