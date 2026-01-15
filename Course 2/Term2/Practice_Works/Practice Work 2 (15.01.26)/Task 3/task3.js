@@ -10,7 +10,7 @@ while (i<=n){
 console.log(s);
 
 console.log('Задание б')
-const readline = require('readline-sync');
+const readline1 = require('readline-sync');
 const n1 = Number(readline.question("Input n: "));
 let s1 = 0;
 let i1 = 1;
