@@ -57,11 +57,11 @@ if (number % 3 === 0 && number % 5 === 0) {
 console.log(taskResult);
 //ДОП. ЗАДАНИЕ
 const readline = require('readline-sync');
-var a = readline.question('a: ');
-var b = readline.question('b: ');
-var c = readline.question('c: ');
-var m = readline.question('m: ');
-var n = readline.question('n: ');
+const a = readline.question('a: ');
+const b = readline.question('b: ');
+const c = readline.question('c: ');
+const m = readline.question('m: ');
+const n = readline.question('n: ');
 if (a * m * m + b * m + c == n) {
     console.log('Да, пройдет');
 } else {
