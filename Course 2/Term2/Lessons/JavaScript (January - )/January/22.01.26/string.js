@@ -42,3 +42,18 @@
 //const b = 5 === '5'; //выведет false, т.к. разные типы данных
 //const u = undefined;
 //console.log(b);
+
+// "use strict"
+// let a = true;
+// let b = false;
+// let res = a + b + 5;
+// res = a && b && 5; //При выводе будет false
+// res = a || b;
+// res = !a;
+// console.log(res);
+
+// "use strict"
+// let a = true;
+// let b = false;
+// let res = (a == b) ? 5 :7; //если не выполняется условие, то выведет 7
+// console.log(res);
