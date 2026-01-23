@@ -78,3 +78,57 @@ if (a * m * m + b * m + c == n) {
 } else {
     console.log('Нет, не пройдет');
 }
+
+//ЗАДАНИЕ 7
+console.log('Задание 7:');
+const StartNumber = 1;
+const multiplier = 4;
+const quantity = 7;
+let current = StartNumber;
+for (let i = 0; i < quantity; i = i + 1) {
+  console.log(current);
+  current *= multiplier;
+}
+
+//ЗАДАНИЕ 8
+console.log('Задание 8: ');
+const lastNumber = 10;
+let sum = 0;
+for (let i = 1; i <= lastNumber; i++) {
+  sum += i;
+}
+console.log(sum);
+
+//ЗАДАНИЕ 9
+console.log('Задание 9: ')
+const LastNumber = 5;
+let Result = 1;
+for (let i = 1; i <= LastNumber; i++) {
+  if (i % 2 === 0) {
+    Result *= i;
+  }
+}
+console.log(Result);
+
+//ЗАДАНИЕ 10
+console.log('Задание 10: ');
+let num = 15;
+for (let i = 2; i < number; i++) {
+  if (num % i === 0) { 
+    console.log(i);
+  }
+}
+
+//ЗАДАНИЕ 11
+console.log('Задание 11: ');
+const readline = require('readline-sync');
+const k = Number(readline.question('a: ')); // или +readline.question('a: ')
+for (let num = 100; num <= 999; num++) {
+  let a = (num / 100) | 0;
+  let b = (num / 10) % 10 | 0; 
+  let c = num % 10; 
+  let sum = a + b + c;
+  if (sum === k) {
+    console.log(num);
+  }
+}
