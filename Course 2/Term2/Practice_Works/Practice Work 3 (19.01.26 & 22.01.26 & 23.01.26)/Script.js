@@ -79,7 +79,8 @@ if (a * m * m + b * m + c == n) {
     console.log('Нет, не пройдет');
 }
 
-//ЗАДАНИЕ 7
+//23.01.26(Циклы)
+//ЗАДАНИЕ 1
 console.log('Задание 7:');
 const StartNumber = 1;
 const multiplier = 4;
@@ -90,7 +91,7 @@ for (let i = 0; i < quantity; i = i + 1) {
   current *= multiplier;
 }
 
-//ЗАДАНИЕ 8
+//ЗАДАНИЕ 2
 console.log('Задание 8: ');
 const lastNumber = 10;
 let sum = 0;
@@ -99,7 +100,7 @@ for (let i = 1; i <= lastNumber; i++) {
 }
 console.log(sum);
 
-//ЗАДАНИЕ 9
+//ЗАДАНИЕ 3
 console.log('Задание 9: ')
 const LastNumber = 5;
 let Result = 1;
@@ -110,7 +111,7 @@ for (let i = 1; i <= LastNumber; i++) {
 }
 console.log(Result);
 
-//ЗАДАНИЕ 10
+//ЗАДАНИЕ 4
 console.log('Задание 10: ');
 let num = 15;
 for (let i = 2; i < number; i++) {
@@ -119,10 +120,10 @@ for (let i = 2; i < number; i++) {
   }
 }
 
-//ЗАДАНИЕ 11
+//ЗАДАНИЕ 5
 console.log('Задание 11: ');
 const readline = require('readline-sync');
-const k = Number(readline.question('a: ')); // или +readline.question('a: ')
+const k = Number(readline.question('a: '));
 for (let num = 100; num <= 999; num++) {
   let a = (num / 100) | 0;
   let b = (num / 10) % 10 | 0; 
