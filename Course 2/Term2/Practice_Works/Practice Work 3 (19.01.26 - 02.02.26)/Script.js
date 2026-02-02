@@ -436,3 +436,57 @@ function nextPrime(n) {
 
   return k;
 }
+
+//02.02.26(Объекты)
+//ЗАДАНИЕ 1
+console.log('Задание 1');
+let daysOfWeek = {
+  'понедельник': 'monday',
+  'вторник': 'tuesday',
+  'среда': 'wednesday',
+  'четверг': 'thursday',
+  'пятница': 'friday',
+  'суббота': 'saturday',
+  'воскресенье': 'sunday'
+};
+function translate(word, dict) {
+  return word + ' по-английски: ' + dict[word];
+}
+console.log(translate('понедельник', daysOfWeek));
+
+//ЗАДАНИЕ 2
+console.log('Задание 2');
+let getStatistics = function (players) {
+  let totalGoals = 0;
+  for (let i = 0; i < players.length; i++) {
+    totalGoals = totalGoals + players[i].goals;
+  }
+  for (let i = 0; i < players.length; i++) {
+    let player = players[i];
+    player.coefficient = player.goals * 2 + player.passes;
+    player.percent = Math.round(player.goals * 100 / totalGoals);
+  }
+  return players;
+};
+
+//ЗАДАНИЕ 3
+console.log('Задание 3');
+let materialPrice = {
+  'wood': 1000,
+  'stone': 1500,
+  'brick': 2000
+};
+let house = {
+  rooms: 10,
+  floors: 5,
+  material: 'wood',
+  coefficient: 10.5,
+  calculateSquare: function () {
+    return house.rooms * house.coefficient * house.floors;
+  },
+  calculatePrice: function () {
+    let square = house.calculateSquare();
+    let priceForMeter = materialPrice[house.material];
+    return square * priceForMeter;
+  }
+};
