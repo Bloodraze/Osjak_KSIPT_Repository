@@ -323,3 +323,116 @@ switch(length) {
     console.log('Количество цифр: 9');
     break;
 }
+
+//30.01.26(Массивы)
+//ЗАДАНИЕ 1
+console.log('Задание 1:');
+let liquids = ['вода', 'молоко', 'сок', 'чай', 'йогурт'];
+let fruits = ['киви', 'банан', 'персик', 'манго', 'груша', 'ананас'];
+let greens = ['мята', 'шпинат', 'руккола', 'петрушка', 'базилик'];
+let chosenLiquid = 1;
+let chosenFruit = 3;
+let chosenGreen = 2;
+let order = 'Основа — ' + liquids[chosenLiquid - 1] + ', фрукт — ' + fruits[chosenFruit - 1] + ', зелень — ' + greens[chosenGreen - 1];
+console.log(order);
+
+//ЗАДАНИЕ 2
+console.log('Задание 2:');
+let groceries = ['чай', 'шпроты', 'печенье', 'сахар', 'чипсы'];
+let shoppingList = '';
+for (let i = 0; i < groceries.length; i++) {
+  if (i === 0) {
+    shoppingList = groceries[i];
+  } else {
+    shoppingList = shoppingList + ', ' + groceries[i];
+  }
+}
+
+//ДОП. ЗАДАНИЕ
+console.log('Доп. Задание:');
+const readline = require('readline-sync');
+const N = parseInt(readline.question('Введите N: '));
+let primes = new Array();
+let index = 0;
+for (let num = 2; num <= N; num++) {
+  let isPrime = true;
+  for (let d = 2; d <= num - 1; d++) {
+    if (num % d === 0) {
+    isPrime = false;
+    break;
+    }
+  }
+  if (isPrime) {
+  primes[index] = num;
+  index++;
+  }
+}
+console.log(primes);
+
+//02.02.26(Функции)
+//ЗАДАНИЕ 1
+console.log('Задание 1:');
+function checkVehicle(wheels, weight) {
+  if (wheels === 2 && weight < 100) {
+    return 'Парковка разрешена';
+  } else {
+    return 'Вам здесь не место! Мяу!';
+  }
+}
+checkVehicle(2, 80);
+checkVehicle(3, 80);
+checkVehicle(2, 150);
+
+//ЗАДАНИЕ 2
+console.log('Задание 2:');
+function calculatePressure(density, depth) {
+  var g = 9.8;
+  var pressure = density * g * depth;
+  return pressure;
+}
+calculatePressure(1000, 10);
+
+//ЗАДАНИЕ 3
+console.log('Задание 3:');
+function election(arr) {
+  var trueCount = 0;
+  var falseCount = 0;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === true) {
+      trueCount++;
+    } else {
+      falseCount++;
+    }
+  }
+  if (trueCount > falseCount) {
+    return true;
+  } else {
+    return false;
+  }
+}
+election([true, false, true]);
+election([false, false, true]);
+
+//ДОП. ЗАДАНИЕ
+console.log('Доп. Задание:');
+function isPrime(n) {
+  if (n < 2) {
+    return false;
+  }
+  for (var d = 2; d < n; d++) {
+    if (n % d === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+function nextPrime(n) {
+  var k = n + 1;
+
+  while (!isPrime(k)) {
+    k++;
+  }
+
+  return k;
+}
