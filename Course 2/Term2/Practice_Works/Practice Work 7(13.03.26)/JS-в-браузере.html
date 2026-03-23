@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Created by pdf2htmlEX (https://github.com/pdf2htmlEX/pdf2htmlEX) -->
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="generator" content="pdf2htmlEX"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+<title></title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+body {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "TT Norms Pro","Arial",sans-serif;
+  color: #333;
+  word-wrap: break-word;
+  max-width: 640px;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 18px;
+}
+
+
+p{
+  margin-bottom: 2em;
+}
+.code {
+  background-color: #f8f8f8;
+  font-size: 16px;
+  font-family: "Ubuntu Mono","Menlo","Monaco","Consolas","Courier New",monospace;
+}
+
+</style>
+
+</head>
+<body>
+
+  <h1>Конспект «JS в браузере». Раздел 1</h1>
+
+  <p>Поиск элементов на странице:</p>
+<div class="code">
+  <p>// Поиск элемента по тегу<br>
+  let list = document.querySelector('ul');</p>
+  <p>// Поиск последнего элемента из списка<br>
+  let lastProduct = document.querySelector('li:last-child');</p>
+  <p>// Поиск элемента по классу<br>
+  let price = document.querySelector('.price');</p>
+  <p>// Поиск третьего элемента из списка товаров<br>
+  let thirdProduct = document.querySelector('.product:nth-child(3)');</p>
+  <p>// Поиск всех элементов, подходящих по селектору<br>
+  let listItems = document.querySelectorAll('.product');</p>
+</div>
+
+  <p>querySelectorAll возвращает список (коллекцию) элементов. Этот список похож на массив, но им не является. Он называется псевдомассив и его можно перебирать с помощью цикла for.</p>
+
+  <p>Добавление класса элементу страницы:</p>
+
+  <p>// Когда ищем элемент по классу, используем точку<br>
+  let product = document.querySelector('.product');</p>
+
+  <p>// Но когда добавляем класс, точки нет!<br>
+  product.classList.add('product--sale');</p>
+
+  <p>Результат работы classList.add() такой же, как при ручном добавлении класса в разметку:</p>
+
+  <div class="code">&lt!-- Исходное состояние разметки --><br>
+  &ltli class="product"><br>
+    …<br>
+  &lt/li><br>
+<br>
+  &lt!-- Состояние после вызова classList.add --><br>
+  &ltli class="product product--sale"><br>
+    …<br>
+  &lt/li><br>
+</div>
+
+<div>
+<div>
+</div>
+</div>
+<div id="page-container">
+
+<div >
+
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    body {
+      font-size: 16px;
+      line-height: 22px;
+      font-family: "TT Norms Pro","Arial",sans-serif;
+      color: #333;
+      word-wrap: break-word;
+      max-width: 640px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+
+
+    p{
+      margin-bottom: 2em;
+    }
+    .code {
+      background-color: #f8f8f8;
+      font-size: 16px;
+      font-family: "Ubuntu Mono","Menlo","Monaco","Consolas","Courier New",monospace;
+    }
+
+    </style>
+  
+  </head>
+  <body>
+  <h1>Конспект «JS в браузере». Раздел 2</h1>
+
+<p>Свойство DOM-элемент.children возвращает коллекцию дочерних, то есть вложенных, DOM-элементов.</p>
+
+<p>Создание элемента и добавление его в DOM-дерево:</p>
+
+<div class="code">var list = document.querySelector('.cards');</p>
+
+<p>// Создаём новый элемент<br>
+let card = document.createElement('li');</p>
+
+<p>card.classList.add('card');</p>
+
+<p>// После вызова этого метода новый элемент отрисуется на странице<br>
+list.appendChild(card);</div>
+
+<p>Вот что произойдёт с разметкой после вызова appendChild:</p>
+
+<div class="code">&lt!-- Исходное состояние разметки --><br>
+&ltul class="cards"><br>
+&ltli class="card">Существующий элемент&lt/li><br>
+&lt/ul></div>
+
+<div class="code">&lt!-- Состояние после вызова appendChild --><br>
+&ltul class="cards"><br>
+&ltli class="card">Существующий элемент&lt/li><br>
+&ltli class="card">Добавленный элемент&lt/li><br>
+&lt/ul></div>
+
+<p>Работа с текстовым содержимым элемента:</p>
+
+<div class="code"><p>// HTML<br>
+&ltp>Я — &ltem>текстовый элемент&lt/em>.&lt/p></p>
+
+<p>// JS<br>
+  let p = document.querySelector('p');<br>
+  console.log(p.textContent);<br>
+  // Выведет: Я — текстовый элемент.</p>
+
+  <p>p.textContent = 'Теперь у меня новое содержимое.';<br>
+  console.log(p.textContent);<br>
+  // Выведет: Теперь у меня новое содержимое.</p>
+
+  <p>// В HTML содержание тега изменится<br>
+  &ltp>Теперь у меня новое содержимое.&lt/p></p>
+</div>
+<p>Работа с изображениями:</p>
+
+<div class="code">var picture = document.createElement('img');</p>
+
+<p>// Добавляем адрес картинки<br>
+picture.src = 'images/picture.jpg';</p>
+
+<p>// Добавляет альтернативный текст<br>
+picture.alt = 'Непотопляемая селфи-палка';</p>
+
+<p>// Добавляет изображение в конец родительского элемента<br>
+element.appendChild(picture);<br>
+</p>
+</div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

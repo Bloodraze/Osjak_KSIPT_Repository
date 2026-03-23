@@ -1,0 +1,89 @@
+@font-face {
+ font-weight:400;
+ font-family:"Roboto";
+ font-style:normal;
+ src:local("Roboto"),
+ url(fonts/roboto.woff2) format("woff2"),
+ url(fonts/roboto.woff) format("woff")
+}
+@font-face {
+ font-weight:700;
+ font-family:"Roboto";
+ font-style:normal;
+ src:local("Roboto"),
+ url(fonts/robotobold.woff2) format("woff2"),
+ url(fonts/robotobold.woff) format("woff")
+}
+body {
+ font-size:16px;
+ font-family:"Roboto","Arial",sans-serif;
+ color:#000;
+ background-color:#849d8f
+}
+.good,
+.goods {
+ display:-webkit-box;
+ display:-ms-flexbox
+}
+.goods {
+ display:flex;
+ -ms-flex-wrap:wrap;
+ flex-wrap:wrap;
+ -webkit-box-pack:justify;
+ -ms-flex-pack:justify;
+ justify-content:space-between;
+ width:580px;
+ margin:20px auto;
+ padding:0;
+ list-style:none
+}
+.good {
+ -webkit-box-orient:vertical;
+ -webkit-box-direction:normal;
+ -ms-flex-direction:column;
+ -webkit-box-align:center;
+ -ms-flex-align:center
+}
+.good__price {
+ position:absolute;
+ top:180px;
+ left:55%;
+ width:270px;
+ margin:0 0 20px;
+ font-weight:700;
+ font-size:40px;
+ line-height:40px;
+ text-shadow:.5px .866px 3px #313235;
+ -webkit-transform:translateX(-140px);
+ transform:translateX(-140px)
+}
+.good__description {
+ -webkit-box-ordinal-group:2;
+ -ms-flex-order:1;
+ order:1;
+ max-width:220px;
+ margin:8px 11px;
+ font-weight:400;
+ font-size:18px;
+ line-height:22px;
+ text-align:center;
+ color:#fff;
+ text-decoration:underline;
+ -webkit-text-decoration-color:rgba(255,255,255,.4);
+ text-decoration-color:rgba(255,255,255,.4)
+}
+.good img {
+ border-radius:100%;
+ width:220px;
+ height:220px
+}
+.good__image {
+ padding:10px;
+ background-image:url(gllacy/lollipop.svg);
+ background-repeat:no-repeat;
+ background-size:450px;
+ background-position:-45px -45px
+}
+.good__button {
+ display:none
+}
