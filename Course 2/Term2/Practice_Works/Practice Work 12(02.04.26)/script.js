@@ -37,6 +37,55 @@ TextCell.prototype.draw = function(width, height) {
   return result;
 };
 
+function FrameCell(text) {
+  TextCell.call(this, text);
+}
+
+FrameCell.prototype = Object.create(TextCell.prototype);
+FrameCell.prototype.constructor = FrameCell;
+
+FrameCell.prototype.minWidth = function() {
+  return TextCell.prototype.minWidth.call(this) + 2;
+};
+
+FrameCell.prototype.minHeight = function() {
+  return TextCell.prototype.minHeight.call(this) + 2;
+};
+
+FrameCell.prototype.draw = function(width, height) {
+  var contentWidth = width - 2;
+  var contentHeight = height - 2;
+  
+  var lines = [];
+  
+
+  lines.push('┏' + repeatChar('━', contentWidth) + '┓');
+  
+
+  var content = TextCell.prototype.draw.call(this, contentWidth, contentHeight);
+  for (var i = 0; i < content.length; i++) {
+    lines.push('┃' + content[i] + '┃');
+  }
+  
+
+  while (lines.length < height) {
+    lines.push('┃' + repeatChar(' ', contentWidth) + '┃');
+  }
+  
+
+  lines[height - 1] = '┗' + repeatChar('━', contentWidth) + '┛';
+  
+  return lines;
+};
+
+function repeatChar(char, times) {
+  var result = '';
+  for (var i = 0; i < times; i++) {
+    result += char;
+  }
+  return result;
+}
+
 function UnderlinedCell(text) {
   TextCell.call(this, text);
 }
@@ -80,15 +129,34 @@ RTextCell.prototype.draw = function(width, height) {
 function dataTable(data) {
   var rows = [];
   
+
+  var maxHeight = 0;
+  var maxMountain = '';
+  for (var i = 0; i < data.length; i++) {
+    if (data[i].height > maxHeight) {
+      maxHeight = data[i].height;
+      maxMountain = data[i].name;
+    }
+  }
+  
+
   rows.push([
     new UnderlinedCell('name'),
     new UnderlinedCell('height'), 
     new UnderlinedCell('country')
   ]);
   
+
   for (var i = 0; i < data.length; i++) {
+    var nameCell;
+    if (data[i].name === maxMountain) {
+      nameCell = new FrameCell(data[i].name);
+    } else {
+      nameCell = new TextCell(data[i].name);
+    }
+    
     rows.push([
-      new TextCell(data[i].name),
+      nameCell,
       new RTextCell(data[i].height), 
       new TextCell(data[i].country)
     ]);
