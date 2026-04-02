@@ -21,18 +21,23 @@ let input = document.querySelector('.chat-form-input');
 let chatContent = document.querySelector('.chat-content');
 let template = document.querySelector('#message-template').content;
 
-form.onsubmit = function(evt){
+form.addEventListener('submit', function(evt) {
     evt.preventDefault();
     let text = input.value;
     if (!text) return;
     let fragment = template.cloneNode(true);
     let chatMessage = fragment.querySelector('.chat-message');
     chatMessage.querySelector('.chat-message-text').textContent = text;
-    let deleteButton = chatMessage.querySelector('.chat-message-button');
-    deleteButton.onclick = function() {
-        chatMessage.remove();
-    };
     chatContent.append(fragment);
     input.value = '';
     input.focus();
-};
+});
+chatContent.addEventListener('click', function(evt) {
+    let target = evt.target;
+    if (target.classList.contains('chat-message-button')) {
+        let chatMessage = target.closest('.chat-message');
+        if (chatMessage) {
+            chatMessage.remove();
+        }
+    }
+});
