@@ -91,7 +91,7 @@ let maxText = document.querySelector('.popup-max');
 let speed = 4;
 const UPDATE_TIME = 1000 / 60;
 let timer = null;
-let scale = 0.5;
+let scale = 0.1;
 
 let score = 0;
 let maxProgress = 0;
